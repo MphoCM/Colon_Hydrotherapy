@@ -8,16 +8,12 @@ $REMOTE="origin"
 git add .
 git commit -m "second push to github"
 
-# 
-echo "gh-pages branch does not exist on the remote. Creating the branch..."
-# Create the branch locally if it doesn't exist, and push it to remote
-git checkout -b gh-pages
+# Push to the gh-pages repository
+git checkout gh-pages
 git merge master
-git push origin gh-pages
+git add .
+git push gh-pages
 git checkout master
 
-# Deploy by pushing to the gh-pages branch
-echo "Deploying to $BRANCH..."
-git add .
-git commit -m "Deploying to GitHub Pages"
+# Deployment successful
 echo "Deployment successful!"
