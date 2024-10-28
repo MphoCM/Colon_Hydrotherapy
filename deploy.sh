@@ -25,4 +25,3 @@ echo "Deploying to $BRANCH..."
 git add .
 git commit -m "Deploying to GitHub Pages"
   echo "Deployment successful!"
-
