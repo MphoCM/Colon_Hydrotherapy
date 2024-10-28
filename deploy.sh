@@ -19,16 +19,10 @@ else
   git merge master
   git push origin gh-pages
   git checkout master
-fi
 
 # Deploy by pushing to the gh-pages branch
 echo "Deploying to $BRANCH..."
 git add .
 git commit -m "Deploying to GitHub Pages"
   echo "Deployment successful!"
-else
-  echo "Error during deployment. Forcing remote $BRANCH to match local branch."
-  # Force push local branch to remote gh-pages
-  git push $REMOTE $BRANCH --force
-  echo "Forced deployment completed successfully."
-fi
+
