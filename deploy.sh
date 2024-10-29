@@ -2,7 +2,7 @@
 
 # add files to git
 git add .
-git commit -m "checking the deployment"
+git commit -m "checking pinDrop"
 
 # Push to the gh-pages repository
 git checkout gh-pages
