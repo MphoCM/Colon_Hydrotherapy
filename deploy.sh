@@ -7,6 +7,7 @@ git commit -m "checking the deployment"
 # Push to the gh-pages repository
 git checkout gh-pages
 git reset --hard main
+git add .
 git push --force origin gh-pages
 git checkout main
 
