@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # add files to git
 git add .
 git commit -m "checking the deployment"
