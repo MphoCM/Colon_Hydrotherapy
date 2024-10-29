@@ -81,6 +81,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit:contain;
   padding: 2em 1em;
   text-align: center;
 }
@@ -108,6 +109,16 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Location Pin
+ */
+.pinDrop {
+  background-image: url(../../static/imgs/pinDrop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 50px;
+}
 
 .outro {
   background-color: var(--primary-color);
